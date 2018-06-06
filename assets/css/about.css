@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
+* {
+    margin: 0;
+    padding: 0;
+}
+/* .bg-primary {
+    background: blue!important;
+    padding-top: 15px;
+} */
+/* header style */
+.navTop {
+    padding: 0 70px;
+}
+.pageHeader {
+    background: #272525;
+    height: 98px;
+}
+/* .pageHeader {
+    width: 100%;
+    background-image: url("../image/dbhome.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 664px;
+} */
+/* .headContent {
+    margin-top: 35px;
+} */
+
+.doersbase-logo {
+    width: 100%;
+    min-height: 10%;
+    margin-top: 5px;
+}
+
+.nav-bars {
+    margin-top: 25px;
+    display: none;
+}
+
+.desktop-logo-in-mobile {
+    display: none;
+}
+
+.nav-bars:hover {
+    cursor: pointer;
+}
+
+.doersbase-logo-mobile {
+    max-width: 100%;
+    max-height: 70%;
+}
+
+@media only screen and (max-width: 577px) {
+
+    .nav-bars {
+        margin-left: 33.33%;
+        display: inline-block;
+    }
+
+    .doersbase-logo-mobile {
+        max-width: 100%;
+    }
+
+    .left {
+        width: 40%;
+        margin-left: 0;
+    }
+
+    .right {
+        width: 60%;
+        height: 90%;
+        margin-top: 12px;
+    }
+}
+
+.navigation-sidebar {
+    position: fixed;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #222121 !important;
+    z-index: 6;
+    color: white;
+}
+
+.fa-window-close {
+    position: absolute;
+    right: 0;
+}
+
+.navigation-sidebar ul {
+    list-style-type: none;
+}
+
+.navigation-sidebar ul li {
+    border-bottom: solid 1px #7b7070;;
+}
+
+.navigation-sidebar ul li a, .navigation-sidebar ul li .btn-contact {
+    padding: 15px 30px;
+    display: inline-block;
+    transition: color 0.4s;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation-sidebar ul li .btn-contact {
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.navigation-sidebar ul li a:hover, .navigation-sidebar ul li .btn-contact:hover {
+    color: #ddd;
+}
+
+@media only screen and (max-width: 750px) {
+    .doersbase-logo-in-desktop, .navigation-list-in-desktop {
+        display: none;
+    }
+
+    .nav-bars, .desktop-logo-in-mobile {
+        display: block;
+    }
+    .left {
+        margin-left: -35px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /* .left {
+        margin-top: 20px;
+    } */
+
+    .right {
+        margin-top: 35px;
+    }
+
+    .nav-bars {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1099px) and (max-width: 1365px) {
+    .navigation-list {
+        margin-top: 25px!important;
+    }
+}
+@media (min-width: 901px) and (max-width: 1098px) {
+    .navigation-list {
+        font-size: 11px;
+        margin-top: 15px!important;
+    }
+    .btn-contact {
+        font-size: 12px;
+    }
+}
+@media (min-width: 751px) and (max-width: 900px) {
+    .navigation-list {
+        font-size: 10px;
+    }
+    .btn-contact {
+        font-size: 11px;
+    }
+    .navTop {
+        padding: 0 30px;
+    }
+    .navigation-list {
+        margin-top: 15px!important;
+    }
+}
+#top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+}
+#top img {
+    width: 100%;
+}
+
+
+
+.navigation-list {
+   color: white;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   margin-top: 25px;
+   font-family: 'Roboto', sans-serif;
+   position: absolute;
+   right: 0;
+}
+
+.navigation-list li {
+    display: inline;
+    margin: 5px;
+}
+
+.navigation-list li a {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+.navigation-list li a:hover {
+    color: #ddd;
+}
+
+.btn-contact {
+    background-color: transparent;
+    color: white;
+    border: solid 1px #ddd;
+    margin: 5px;
+    transition: color 0.4s;
+}
+
+.btn-contact:hover {
+    color: #ddd;
+}
+
+.about {
+    width: 100%;
+    color: white;
+    margin-top: 30px;
+}
+.about .aboutBox button {
+    border-radius: 0;
+    background: transparent;
+    color: white;
+    border-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 7px 30px;
+    transform: translate(0%, 0%);
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.about .aboutBox button:focus {
+    display: none;
+}
+.about .aboutBox button:hover {
+    color: black;
+}
+.about .aboutBox button:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+}
+.about .aboutBox button:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: white;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.about .aboutBox h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 39px;
+}
+.about .aboutBox p {
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.pc-smartphone img {
+    width: 100%;
+}
+a.desktop-logo-in-mobile {
+    height: 75px;
+    padding: 13px 0 0 30px!important;
+}
+
+/* footer style */
+.footer {
+    height: 100%;
+    background: black;
+    color: white;
+    margin-top: 125px;
+    font-family: 'Roboto', sans-serif;
+}
+.footer p {
+    font-size: 14px;
+}
+.officeHour {
+    height: 60px;
+    background: #121111;
+}
+.one p a {
+    color: white;
+    
+}
+.two {
+    border-left: 0.5px solid whitesmoke;
+}
+.three {
+    border-left: 0.5px solid whitesmoke;
+}
+
+
+.boxe{
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.box5{
+    padding: 10px 12px;
+    display: inline-block;
+    
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+.box1:hover{
+    background-color: #607bb3;
+    border-color: #607bb3;
+}
+/* .box2:hover{
+    background-color:#37bbf5;
+    border-color: #37bbf5;
+} */
+.box3:hover{
+    background-color:#db2e36;
+    border-color: #db2e36;
+}
+.box4:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-color: #8a3ab9;
+}
+.box5:hover{
+    background-color: #e74b32;
+    border-color: #e74b32;
+}
+.footRow {
+    padding: 50px 0;
+}
+.last p {
+    text-align: center;
+}
+
+/* footer media */
+@media (min-width: 576px) and (max-width: 767px) {
+    .two {
+        border-left: none;
+    }
+    .three {
+        border-left: none;
+    }
+}
+@media (max-width: 575px) {
+    .two {
+        border-left: none;
+    }
+    .three {
+        border-left: none;
+    }
+    .footRow {
+        padding-left: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+.parallax {
+    min-height: 700px;
+    background: #00000042;
+    padding: 77px 0;
+}
+.parallax button {
+    display: block;
+    margin: auto;
+    border-radius: 0;
+    background: transparent;
+    color: white;
+    border-color: white;
+    font-weight: 400;
+    padding: 7px 30px;
+    transform: translate(0%, 0%);
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.parallax button:focus {
+    display: none;
+}
+.parallax button:hover {
+    color: black;
+    border-color: white;
+}
+.parallax button:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+}
+.parallax button:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: white;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.aboutBlock {
+    height: 415px;
+    width: 630px;
+    color: whitesmoke;
+    background: #1b2c3c;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 30px 68px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 190px;
+}
+.logoOffice {
+    height: 94px;
+    width: 100%;
+}
+.logoOffice img {
+    width: 60%;
+}
+.aboutOffice {
+    margin-top: 15px;
+}
+.kns {
+    margin-top:200px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}

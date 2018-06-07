@@ -394,6 +394,13 @@ a.desktop-logo-in-mobile {
 
 
 /* Our Expertise Style */
+.blueBox {
+    background: #6cb2b2;
+    color: white;
+}
+.wsBox {
+    background: whitesmoke;
+}
 .dragDown1 {
     margin-top: 100px;
 }
@@ -578,6 +585,7 @@ a.desktop-logo-in-mobile {
     background: #00000042;
     margin-top: 90px;
     padding: 77px 0;
+    margin-bottom: 200px;
 }
 .parallax h1 {
     font-family: 'Roboto', sans-serif;
@@ -623,10 +631,10 @@ a.desktop-logo-in-mobile {
 }
 
 /* team style */
-.officeTeam {
+/* .officeTeam {
     margin-top: 190px;
-}
-.officeTeam h2 {
+} */
+.teamHead h2 {
     margin-bottom: 45px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -645,6 +653,10 @@ a.desktop-logo-in-mobile {
     border-radius: 50%;
     margin: auto;
     overflow: hidden;
+    border: 4px solid #dcdbdb;
+}
+.teamImg:hover {
+    border-color: #a29292;
 }
 .teamImg img {
     width: 100%;
@@ -699,7 +711,33 @@ a.desktop-logo-in-mobile {
         font-size: 12px;
     }
 }
-
+.navIntern {
+    width: 140px;
+    text-align: center;
+}
+.tab-content .tab-pane {    
+    position: relative;
+}
+.mainTab {
+    border: none;
+}
+.nav-tabs .nav-link {
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: #393535;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background: #393535;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+#teamAuto {
+    margin: auto;
+}
+div#myTabContent {
+    margin-top: 50px;
+}
 
 /* events style */
 .events {

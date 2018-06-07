@@ -1,0 +1,100 @@
+.officeTeam {
+    margin-top: 70px;
+}
+.officeTeam h2 {
+    margin-bottom: 45px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.teamBox {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+}
+.teamBox:hover {
+    box-shadow: 0 0 30px -10px rgba(0,0,0,0.64);
+}
+.teamImg {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+.teamImg img {
+    width: 100%;
+}
+.teamInfo {
+    margin-top: 30px;
+    height: 60px;
+}
+.teamInfo h6 {
+    font-weight: 600;
+    font-size: 15px;
+}
+.teamInfo p {
+    font-weight: 300;
+    font-size: 14px;
+}
+.teamDetails {
+    margin-top: 25px;
+    height: 200px;
+}
+.teamDetails p {
+    font-weight: 300;
+    font-size: 14px;
+}
+.teamSM {
+    margin-top: 25px;
+}
+.teamSM a {
+    letter-spacing: 10px;
+    color: #74777b;
+}
+.teamSM a:hover {
+    color: #3e80d7;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .teamDetails {
+        height: 235px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .teamInfo h6 {
+        font-size: 12px;
+    }
+    .teamInfo p {
+        font-size: 12px;
+    }
+    .teamDetails p {
+        font-size: 11px;
+    }
+    .teamSM {
+        margin-top: 17px;
+        font-size: 12px;
+    }
+}
+.navIntern {
+    width: 140px;
+    text-align: center;
+}
+.tab-content .tab-pane {    
+    position: relative;
+}
+.mainTab {
+    border: none;
+}
+.nav-tabs .nav-link {
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: #393535;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background: #393535;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+#teamAuto {
+    margin: auto;
+}

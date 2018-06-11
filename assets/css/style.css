@@ -566,6 +566,7 @@ a.desktop-logo-in-mobile {
     margin-top: 30px;
 }
 .client {
+    margin: 0px 12px;
     flex-basis: 10%;
     /* flex: 1 0 auto; */
     min-width: 100px;
@@ -876,7 +877,7 @@ div#myTabContent {
 }
 .contactPara {
     min-height: 400px;
-    /* background: #00000042; */
+    background: #00000042;
     margin-top: 90px;
 }
 .contactUs h2 {

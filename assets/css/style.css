@@ -331,6 +331,9 @@
     transform: translate(0%, 0%);
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
+/* .about .aboutBox button:hover {
+    color: black;
+} */
 .about .aboutBox button a {
     text-decoration: none;
     color: white;
@@ -700,8 +703,8 @@ a.desktop-logo-in-mobile {
     display: block;
     margin: auto;
     border-radius: 0;
-    background: transparent;
-    color: white;
+    background: white;
+    color: black;
     border-color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -709,7 +712,12 @@ a.desktop-logo-in-mobile {
     transform: translate(0%, 0%);
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
-.productPara button:focus {
+.productPara button:hover {
+    background: white;
+    color: black;
+    border-color: white;
+}
+/* .productPara button:focus {
     display: none;
 }
 .productPara button:hover {
@@ -731,7 +739,7 @@ a.desktop-logo-in-mobile {
     width: 0;
     background: white;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-}
+} */
 
 /* team style */
 /* .officeTeam {
@@ -949,6 +957,11 @@ div#myTabContent {
 @media (max-width: 600px) {
     .carousel-control-next {
         right: -10px;
+    }
+}
+@media (max-width: 767px) {
+    .carouselRow {
+        padding: 0!important;
     }
 }
 

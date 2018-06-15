@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doersbase Softudio</title>
+    <link rel="icon" href="assets/image/dbIcon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body>
+    <a id="top" onclick="topScroll(); return false;" href="#"><img src="assets/image/top.png" alt=""></a>
+    <!-- navigation-sidebar-->
+    <div class="navigation-sidebar">
+        <i class="fa fa-window-close" aria-hidden="true"></i>
+        <ul>
+            <li><a class="desktop-logo-in-mobile" href="https://doersbase.com"><img class="doersbase-logo-mobile" src="assets/image/doersbaselogo.ad2b100.png" alt="Doersbase logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#expertise">Our Expertise</a></li>
+            <li><a href="index.html#officeTeam">Our Team</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- page header -->
+    <div class="container-fluid pageHeader">
+        <div class="row navTop">
+            <div class="col-sm-3 col-md-3 col-xs-3 left">
+                <a class="doersbase-logo-in-desktop" href="https://doersbase.com"><img class="doersbase-logo" src="assets/image/doersbaselogo.ad2b100.png" alt="Doersbase logo"></a>
+                <i class="fas fa-bars nav-bars fa-2x text-white"></i>
+            </div>
+            <div class="offset-sm-1 offset-xs-0 col-sm-8 col-md-8 col-xs-8 right">   
+                <ul class="navigation-list navigation-list-in-desktop">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#expertise">Our Expertise</a></li>
+                    <li><a href="index.html#officeTeam">Our Team</a></li>
+                    <li><a href="index.html#events">Events</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a onclick="pageScroll('contactUs'); return false;" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- about Block -->
+    <div class="aboutBlock">
+        <div class="logoOffice">
+            <img src="assets/image/doersbaselogo.ad2b100.png" alt="">
+        </div>
+        <div class="aboutOffice">
+            <p>Doersbase incorporates highly qualified professionals and makes the company itself the most preeminent in the software development. Our most accomplished professionals are endeavored to facilitate students with in-depth knowledge in respective stream helping them to yield more practicable turnouts. Considerable working space and viable ambiance encourages to work as a team, supporting each other and workout for every obstacle exhilarating the working experience in here.</p>
+        </div>
+    </div>
+
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/image/kSkills.jpeg">
+        <div class="kns" data-aos="fade-up" data-aos-duration="800">
+            <h1>Our Knowledge and Skills</h1>
+        </div>
+        <div class="row section-padding" data-aos="fade-up" data-aos-duration="800">
+            <div class="col-md-3 col-sm-6 circle-area">          
+                <div class="circle-area-wrapper" id="cirlc-1">
+                    <div class="circle-inner">
+                        
+                    </div>
+                </div>
+                <p>DESIGNING SKILL</p>
+            </div>
+            <div class="col-md-3 col-sm-6 circle-area">
+                <div class="circle-area-wrapper" id="cirlc-2">
+                    <div class="circle-inner">
+                        
+                    </div>
+                </div>
+                <p>DEVELOPING SKILL</p>
+            </div>
+            <div class="col-md-3 col-sm-6 circle-area">
+                <div class="circle-area-wrapper" id="cirlc-3">
+                    <div class="circle-inner">
+                        
+                    </div>
+                </div>
+                <p>DATABASE SKILL</p>
+            </div>
+            <div class="col-md-3 col-sm-6 circle-area">
+                <div class="circle-area-wrapper" id="cirlc-4">
+                    <div class="circle-inner">
+                        
+                    </div>
+                </div>
+                <p>PRECISION & DELIVERY IN TIME</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- foot Contact -->
+    <div class="parallax contactPara" id="contactUs" data-parallax="scroll" data-image-src="assets/image/contactUs.jpeg">
+        <div class="row contactRow" data-aos="fade-up" data-aos-duration="800">
+            <div class="col-md-6 contactCol1">
+                <div class="contactUs">
+                    <h2>Contact Us</h2>
+                    <p>ADDRESS: Golpark Butwal 32907, Nepal. <br>✆ 985-7071712 | doersbase@gmail.com</p>
+                </div>
+                <div class="openingHour">
+                    <div id="timeDiv"></div>
+                    <div class="viewHours">
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">View Hours &nbsp;&nbsp;<i class="far fa-clock"></i></button>
+                    </div>
+                    
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-sm modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">We are open at these times</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>                                
+                                </div>
+                                <div class="modal-body">
+                                    <div id="Sunday" class="dateTime">
+                                        <div class="day">Sunday</div>
+                                        <div class="time">9 AM - 5 PM</div>
+                                    </div>
+                                    <br>
+                                    <div id="Monday" class="dateTime">
+                                        <div class="day">Monday</div>
+                                        <div class="time">9 AM - 5 PM</div>  
+                                    </div>
+                                    <br>
+                                    <div id="Tuesday" class="dateTime">
+                                        <div class="day">Tuesday</div>
+                                        <div class="time">9 AM - 5 PM</div>
+                                    </div>
+                                    <br>
+                                    <div id="Wednesday" class="dateTime">
+                                        <div class="day">Wednesday</div>
+                                        <div class="time">9 AM - 5 PM</div>
+                                    </div>
+                                    <br>
+                                    <div id="Thursday" class="dateTime">
+                                        <div class="day">Thursday</div>
+                                        <div class="time">9 AM - 5 PM</div>
+                                    </div>
+                                    <br>
+                                    <div id="Friday" class="dateTime">
+                                        <div class="day">Friday</div>
+                                        <div class="time">9 AM - 2 PM</div>
+                                    </div>
+                                    <br>
+                                    <div id="Saturday" class="dateTime">
+                                        <div class="day">Saturday</div>
+                                        <div class="time">CLOSED</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="subscribe">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="Phone Number">
+                    <textarea name="message" id="#message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- map -->
+    <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.1315756553404!2d83.46375871443456!3d27.713223531841873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399686f83b7f65db%3A0xe651466ecb3e28d!2sDoersbase+Butwal!5e0!3m2!1sen!2snp!4v1528694333508" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="follow">
+                <p>Follow us on:</p>
+                <a href="https://www.facebook.com/doersbase/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCQMAiNihf8nZInqrNd7DUmw" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="last"><p>©2018 Doersbase - All rights reserved. Developed by Doersbase</p></div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/parallax/parallax.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/active.js"></script>
+    <script src="assets/js/circle-progress.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+	<script>
+		AOS.init();
+    </script>
+</body>
+</html>

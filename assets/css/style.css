@@ -802,26 +802,6 @@ a.desktop-logo-in-mobile {
 .teamSM a:hover {
     color: #3e80d7;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-    .teamDetails {
-        height: 235px;
-    }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-    .teamInfo h6 {
-        font-size: 12px;
-    }
-    .teamInfo p {
-        font-size: 12px;
-    }
-    .teamDetails p {
-        font-size: 11px;
-    }
-    .teamSM {
-        margin-top: 17px;
-        font-size: 12px;
-    }
-}
 .navIntern {
     width: 140px;
     text-align: center;
@@ -849,121 +829,123 @@ a.desktop-logo-in-mobile {
 div#myTabContent {
     margin-top: 50px;
 }
-@media (min-width: 768px) {
-    /* show 3 items */
-    .carousel-inner .active,
-    .carousel-inner .active + .carousel-item,
-    .carousel-inner .active + .carousel-item + .carousel-item,
-    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
-      display: block;
-    }
-  
-    .carousel-inner
-      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .carousel-inner
-      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
-      + .carousel-item,
-    .carousel-inner
-      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
-      + .carousel-item
-      + .carousel-item,
-    .carousel-inner
-      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
-      + .carousel-item
-      + .carousel-item
-      + .carousel-item {
-      transition: none;
-    }
-  
-    .carousel-inner .carousel-item-next,
-    .carousel-inner .carousel-item-prev {
-      position: relative;
-      transform: translate3d(0, 0, 0);
-    }
-  
-    .carousel-inner
-      .active.carousel-item
-      + .carousel-item
-      + .carousel-item
-      + .carousel-item
-      + .carousel-items {
-      position: absolute;
-      top: 0;
-      right: -33.3333%;
-      z-index: -1;
-      display: block;
-      visibility: visible;
-    }
-  
-    /* left or forward direction */
-    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-    .carousel-item-next.carousel-item-left + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-    .carousel-item-next.carousel-item-left
-      + .carousel-item
-      + .carousel-item
-      + .carousel-item,
-      .carousel-item-next.carousel-item-left
-      + .carousel-item
-      + .carousel-item
-      + .carousel-item
-      + .carousel-item {
-      position: relative;
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
-    }
-  
-    /* farthest right hidden item must be abso position for animations */
-    .carousel-inner .carousel-item-prev.carousel-item-right {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      display: block;
-      visibility: visible;
-    }
-  
-    /* right or prev direction */
-    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-    .carousel-item-prev.carousel-item-right + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-    .carousel-item-prev.carousel-item-right
-      + .carousel-item
-      + .carousel-item
-      + .carousel-item,
-      .carousel-item-prev.carousel-item-right
-      + .carousel-item
-      + .carousel-item
-      + .carousel-item
-      +.carousel-item {
-      position: relative;
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-      display: block;
-      visibility: visible;
-    }
-  }
-  .carousel-control-next {
-    right: -35px;
-    width: 3%;
-    height: 25%;
-    margin: auto;
-    /* color: black; */
-    background: #645d5d;
+.slick-next {
+    background: gray!important;
+    height: 35px!important;
+    width: 33px!important;
 }
-.carouselRow {
-    padding: 10px!important;
+.slick-prev {
+    background: gray!important;
+    height: 35px!important;
+    width: 33px!important;
 }
-@media (max-width: 600px) {
-    .carousel-control-next {
-        right: -10px;
+.teamBox:focus {
+    outline: none;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .teamDetails {
+        height: 235px;
     }
 }
-@media (max-width: 767px) {
-    .carouselRow {
-        padding: 0!important;
+@media (min-width: 992px) and (max-width: 1023px) {
+    .teamInfo h6 {
+        font-size: 12px;
+    }
+    .teamInfo p {
+        font-size: 12px;
+    }
+    .teamDetails p {
+        font-size: 11px;
+    }
+    .teamSM {
+        margin-top: 17px;
+        font-size: 12px;
+    }
+    .slick-next {
+        right: -10px!important;
+    }
+    .slick-prev {
+        left: -10px!important;
+    }
+    .teamBox {
+        padding: 35px;
     }
 }
+@media (min-width: 780px) and (max-width: 991px) {
+    .teamInfo h6 {
+        font-size: 12px;
+    }
+    .teamInfo p {
+        font-size: 12px;
+    }
+    .teamDetails p {
+        font-size: 11px;
+    }
+    .teamSM {
+        margin-top: 17px;
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px) and (max-width: 779px) {
+    .slick-next {
+        right: -15px!important;
+    }
+    .slick-prev {
+        left: -15px!important;
+    }
+}
+@media (min-width: 481px) and (max-width: 599px) {
+    .teamInfo h6 {
+        font-size: 12px;
+    }
+    .teamInfo p {
+        font-size: 12px;
+    }
+    .teamDetails p {
+        font-size: 11px;
+    }
+    .teamSM {
+        margin-top: 17px;
+        font-size: 12px;
+    }
+    .teamBox {
+        padding: 55px;
+    }
+    .slick-next {
+        right: 10px!important;
+    }
+    .slick-prev {
+        left: 10px!important;
+    }
+}
+@media (max-width: 480px) {
+    .teamInfo h6 {
+        font-size: 12px;
+    }
+    .teamInfo p {
+        font-size: 12px;
+    }
+    .teamDetails p {
+        font-size: 11px;
+    }
+    .teamSM {
+        margin-top: 17px;
+        font-size: 12px;
+    }
+    .teamBox {
+        padding: 55px;
+    }
+    .slick-next {
+        right: 10px!important;
+    }
+    .slick-prev {
+        left: 10px!important;
+    }
+    .teamDetails {
+        height: 120px;
+    }
+}
+
 
 
 /* events style */
@@ -972,23 +954,26 @@ div#myTabContent {
 }
 /* .eventBox {
     height: 435px;
-   
+
 } */
 .eventBox img {
     width: 100%;
 }
-.eventIntro {
+/* .eventIntro {
     height: 110px;
     background: black;
     width: 90%;
     position: relative;
     bottom: 40px;
-}
+} */
 .eventTxt {
     /* border: 1px solid black; */
     width: 100%;
     font-family: 'Roboto', sans-serif;
     padding: 55px;
+}
+.eventTxt h4 {
+    text-transform: uppercase;
 }
 .eventTxt p {
     line-height: 2;
@@ -1031,6 +1016,26 @@ div#myTabContent {
         padding: 30px;
     }
 }
+a.carousel-control-prev {
+    background: black;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+a.carousel-control-next {
+    background: black;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+.comingUp {
+    height: 420px;
+    padding: 55px;
+}
+.events h1 {
+    text-align: center;
+    margin-bottom: 75px;
+}
 
 
 /* blogstyle */
@@ -1049,10 +1054,15 @@ div#myTabContent {
     width: 100%;
 }
 .blogIntro {
-    height: 110px;
-    background: black;
-    width: 90%;
-    bottom: 40px;
+    position: relative;
+    height: 80px;
+    background: rgba(0,0,0,0.5);
+    bottom: 80px;
+}
+.blogIntro p {
+    color: white;
+    font-size: 20px;
+    padding: 22px 30px;
 }
 .blogTxt {
     /* border: 1px solid black; */
@@ -1098,6 +1108,9 @@ div#myTabContent {
 }
 
 
+
+
+/* footcontent style */
 .contactRow {
     margin: 0;
     padding: 25px 0;
